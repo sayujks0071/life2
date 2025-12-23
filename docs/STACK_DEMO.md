@@ -45,3 +45,38 @@ This demo stack consists of 3 pull requests:
 - Update PR descriptions to explain dependencies
 - Test each PR independently before submitting the next
 
+## Examples
+
+### Example Stack: Feature Implementation
+
+```
+main
+  └── stack/feat/add-api-endpoint (PR #1)
+       └── stack/feat/add-validation (PR #2)
+            └── stack/feat/add-tests (PR #3)
+```
+
+### Example Stack: Bug Fix
+
+```
+main
+  └── stack/fix/identify-issue (PR #1)
+       └── stack/fix/implement-fix (PR #2)
+            └── stack/fix/add-regression-test (PR #3)
+```
+
+## Validation Checklist
+
+Before submitting a stack, ensure:
+
+- [ ] Each PR has a clear, focused purpose
+- [ ] Dependencies are clearly documented
+- [ ] Each PR can be reviewed independently
+- [ ] Tests pass for each PR in isolation
+- [ ] Commit messages follow conventional commits format
+- [ ] PR descriptions explain what and why
+
+## Summary
+
+This stack demonstrates how Graphite enables efficient code review through incremental, dependent pull requests. Each PR builds upon the previous one, allowing for early merges and clear dependency tracking.
+
