@@ -21,3 +21,27 @@ This demo stack consists of 3 pull requests:
 - **Clear Dependencies**: Each PR has a clear, focused purpose
 - **Better CI/CD**: Each PR can be tested independently
 
+## Detailed Workflow
+
+### Creating a Stack
+
+1. Start from your base branch (usually `main`)
+2. Create the first branch: `gt branch create stack/pr1-name`
+3. Make changes and commit
+4. Create the next branch: `gt branch create stack/pr2-name --insert`
+5. Continue for each PR in the stack
+
+### Graphite Commands
+
+- `gt branch create <name>` - Create a new branch
+- `gt branch create <name> --insert` - Create a branch that inserts into the stack
+- `gt stack submit` - Submit all branches in the stack as PRs
+- `gt stack restack` - Restack branches after changes
+
+### Best Practices
+
+- Keep each PR focused on a single concern
+- Write clear commit messages
+- Update PR descriptions to explain dependencies
+- Test each PR independently before submitting the next
+
