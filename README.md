@@ -340,3 +340,9 @@ MIT License - See [LICENSE](LICENSE) file
 **Last Updated:** December 17, 2025
 **Version:** 0.9.0 (pre-publication)
 **Status:** Publication-ready (pending final figures)
+
+---
+
+## Demo Pull Request
+
+This is a demo pull request to demonstrate the GitHub workflow. This section can be removed after review.
